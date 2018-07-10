@@ -1,0 +1,17 @@
+{
+  "name": "urlshortener",
+  "version": "1.0.0",
+  "description": "url Shortener",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ivara",
+  "license": "ISC",
+  "dependencies": {
+    "adler32": "^0.1.7",
+    "base62": "^2.0.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  }
+}
