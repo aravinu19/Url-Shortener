@@ -2,12 +2,12 @@ var base = require("base62");
 var adler = require("adler32");
 var admin = require('firebase-admin');
 
-var serviceAccount = require('C:\\Users\\Aravi\\Downloads\\dbdemo.json');
+var serviceAccount = require('path\to\serviceAccount.json'); // path to service account json file for authentication
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: 'https://dbdemo-b1622.firebaseio.com'
-});
+  databaseURL: 'https://database-url.firebaseio.com'
+}); // update database URL for your DB
 
 var db = admin.database();
 var ref = db.ref("shrtenDB/db");
