@@ -23,3 +23,39 @@ function shrten(){
   }
 
 }
+
+function geturl(){
+
+  var shrtUrl = document.getElementById('userUrl2').value;
+
+  var uniqueCheckSum = shrtUrl.split("https://shrten.iva/");
+
+  if(uniqueCheckSum[0] == ''){
+
+    var req = new Request("http://localhost:4000/geturl", {
+      method: "POST",
+      headers: new Headers({"Content-Type": "application/json"}),
+      body: JSON.stringify({url: shrtUrl})
+    });
+
+    fetch(req).then( (res) => {
+      res.json().then( (data) => {
+        document.getElementById('orginUrl').value = data.url;
+        console.log(data);
+      });
+    });
+
+  }else {
+    alert("Invalid shrten Url");
+  }
+
+}
+
+function openurl(){
+  var url = document.getElementById('orginUrl').value;
+
+  if(url != ''){
+    window.open(url, '_blank');
+  }
+
+}

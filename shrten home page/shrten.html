@@ -18,6 +18,20 @@
 
     <script src="shrten.js"></script>
 
+    <style>
+
+      .column{
+        margin: 0 auto;
+        top: 50%;
+
+      }
+
+      #short{
+        padding-top: 50px
+      }
+
+    </style>
+
   </head>
 
   <body>
@@ -28,6 +42,10 @@
         <p> This a simple Url shortener powered by Adler32 and Base62 Algorithms to improve reliabe mini URL's </p>
 
       </div>
+
+      <div align="center">
+
+        <h3 id="short" class="text-dark">Shrten URL</h3>
 
       <div class="column" align="center">
           <div class="column" align="center">
@@ -48,6 +66,39 @@
                 <input type="text" class="form-control" id="shrtUrl">
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div align="center">
+
+        <h3 id="short" class="text-dark">Get Original URL</h3>
+
+        <div class="column" align="center">
+            <div class="column" align="center">
+              <div class="col-lg-6" align="center">
+                <div class="input-group" id="short" align="center">
+                  <input type="text" class="form-control" placeholder="Url to Shorten" id="userUrl2">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" onclick="geturl()">getURL!</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="column" align="center">
+              <div class="col-lg-6" align="center">
+                <div class="input-group" id="short" align="center">
+                  <span class="input-group-addon" id="sizing-addon1">Original Url : </span>
+                  <input type="text" class="form-control" id="orginUrl">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" onclick="openurl()">Open!</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
           </div>
         </div>
 
