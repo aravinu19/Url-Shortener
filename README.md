@@ -11,7 +11,7 @@ https://firebase.google.com/docs/admin/setup#add_firebase_to_your_app
 for reference about firebase DB with JS
 https://firebase.google.com/docs/database/admin/start
 
-Feel free to contribute.
+# Feel free to contribute.
 
                 GNU GENERAL PUBLIC LICENSE
                    Version 3, 29 June 2007
