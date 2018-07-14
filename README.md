@@ -11,6 +11,11 @@ https://firebase.google.com/docs/admin/setup#add_firebase_to_your_app
 for reference about firebase DB with JS
 https://firebase.google.com/docs/database/admin/start
 
+# Test this Project
+
+running on firebase hosting and cloud function
+check this https://dbdemo-b1622.firebaseapp.com
+
 # Feel free to contribute.
 
                 GNU GENERAL PUBLIC LICENSE

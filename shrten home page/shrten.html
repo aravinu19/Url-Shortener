@@ -30,6 +30,10 @@
         padding-top: 50px
       }
 
+      #move{
+        padding-top: 50px
+      }
+
     </style>
 
   </head>
@@ -39,7 +43,7 @@
       <div class="jumbotron" align="center">
 
         <h1> Shrten Url </h1>
-        <p> This a simple Url shortener powered by Adler32 and Base62 Algorithms to improve reliabe mini URL's </p>
+        <p> This a simple Url shortener powered by Adler32 and Base62 Algorithms to provide reliable mini URL's </p>
 
       </div>
 
@@ -50,7 +54,7 @@
       <div class="column" align="center">
           <div class="column" align="center">
             <div class="col-lg-6" align="center">
-              <div class="input-group" align="center">
+              <div class="input-group" id="short" align="center">
                 <input type="text" class="form-control" placeholder="Url to Shorten" id="userUrl">
                 <span class="input-group-btn">
                   <button class="btn btn-default" type="button" onclick="shrten()">Shrten!</button>
@@ -61,7 +65,7 @@
 
           <div class="column" align="center">
             <div class="col-lg-6" align="center">
-              <div class="input-group" align="center">
+              <div class="input-group" id="short" align="center">
                 <span class="input-group-addon" id="sizing-addon1">Shrtened Url : </span>
                 <input type="text" class="form-control" id="shrtUrl">
               </div>
@@ -70,7 +74,7 @@
         </div>
       </div>
 
-      <div align="center">
+      <div align="center" id="move">
 
         <h3 id="short" class="text-dark">Get Original URL</h3>
 
